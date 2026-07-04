@@ -1,0 +1,9 @@
+{
+  "name": "@karios-monorepo/feature-vm",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0"
+  }
+}

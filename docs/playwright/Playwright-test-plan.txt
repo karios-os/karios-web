@@ -1,0 +1,205 @@
+Playwright Test Plan - GUI
+
+
+1. Check for services if they're up and running - (High level testing)*
+*Purpose: To run it every day and notify the resp teams of their services if down
+- Login/logout flow - karios APIs
+- Security
+- Power
+- Updates
+- Liquid cooling
+
+2. Authentication & User Management Tests
+Test successful login with valid credentials
+Test login failure with invalid username/password
+Test form validation (username minimum length, password requirements)
+Test password visibility toggle functionality
+Test login form reset and error states
+Test session persistence after successful login
+Test automatic redirect to intended page after login
+Test logout functionality and session cleanup
+
+User Registration/Signup
+Test successful user registration with valid data
+Test form validation for all fields (email format, password complexity, name requirements)
+Test duplicate username/email handling
+Test password confirmation matching
+Test form submission states (loading, success, error)
+Test navigation between login and signup forms
+
+
+User Management (Admin Features)
+Test user listing with different filters (active/all users)
+Test user creation through admin interface
+Test user role assignment and modification
+Test user activation/deactivation
+Test user deletion with confirmation
+Test role-based access control restrictions
+Test user search and pagination functionality
+
+3. Navigation & UI Component Tests
+Main Navigation Structure
+Test top navigation bar functionality and user dropdown
+Test sidebar navigation (data center, server, VM hierarchy)
+Test breadcrumb navigation accuracy
+Test responsive navigation on different screen sizes
+Test active state highlighting for current page/section
+Test navigation permissions based on user roles
+
+Dynamic Navigation
+Test navigation between different data centers
+Test server selection and navigation
+Test VM selection and context switching
+Test deep linking to specific resources
+Test browser back/forward navigation
+Test URL parameter handling for resource selection
+
+4. VM Management Tests
+VM Provisioning Workflow
+Test complete VM creation flow (standard and cloud-init modes)
+Test hardware configuration (CPU, memory, sockets validation)
+Test storage pool selection and disk configuration
+Test network interface setup and switch assignment
+Test VM naming and validation rules
+Test resource limit enforcement based on node capacity
+Test VM creation with different OS types and ISO selection
+
+VM Operations
+Test VM start/stop/restart operations
+Test VM status monitoring and real-time updates
+Test VM cloning with name validation
+Test VM deletion with confirmation dialogs
+Test VM hardware modification (CPU, memory, disk)
+Test VM console access and session management
+Test VM snapshot management and restoration
+
+VM Hardware Management
+Test virtual disk attachment/detachment
+Test disk reassignment between VMs
+Test network interface management (attach/detach switches)
+Test ISO mounting for OS installation
+Test start-on-boot configuration
+Test hardware resource updates within node limits
+
+5. Server Management Tests
+Server Overview & Monitoring
+Test server status dashboard and metrics display
+Test server hardware information accuracy
+Test server resource utilization monitoring
+Test server connectivity status and health checks
+Test server licensing and feature management
+Test server configuration and settings modification
+
+Server Features Navigation
+Test navigation between server tabs (Home, Storage, Monitoring, etc.)
+Test permission-based tab visibility
+Test server-specific feature access
+Test server console and management interfaces
+Test server event logs and system logs access
+6. Data Center Management Tests
+Data Center Operations
+Test data center overview and statistics
+Test node provisioning and discovery workflow
+Test server credential management and configuration
+Test network switch and interface management
+Test storage management (ZFS pools)
+Test liquid cooling monitoring (if applicable)
+
+Infrastructure Provisioning
+Test BMC node scanning and discovery
+Test node credential setup and validation
+Test node provisioning status tracking
+Test job status monitoring and error handling
+Test bulk operations on multiple nodes
+
+7. Storage Management Tests
+ZFS Storage Operations
+Test storage pool creation and management
+Test datastore configuration and allocation
+Test disk usage monitoring and alerts
+Test backup and snapshot management
+Test storage performance metrics
+Test storage quota and limit enforcement
+
+ISO Management
+Test ISO upload functionality with progress tracking
+Test ISO download from URLs
+Test ISO deletion and cleanup
+Test cloud image management
+Test ISO mounting for VM installations
+8. Network Management Tests
+Network Configuration
+Test virtual switch creation and management
+Test network interface configuration
+Test VLAN management and tagging
+Test network driver selection and compatibility
+Test physical port mapping and management
+Test network monitoring and statistics
+
+Firewall & Security
+Test firewall rule creation and modification
+Test security policy enforcement
+Test network access controls
+Test SSL/TLS certificate management
+
+9. Real-time Features & WebSocket Tests
+Live Updates
+Test real-time VM status updates
+Test server monitoring metrics updates
+Test notification system functionality
+Test WebSocket connection handling and reconnection
+Test concurrent user operations and conflicts
+Test system alerts and event notifications
+
+10. Permission & Role-based Access Tests
+Role Management
+Test role creation with permission assignment
+Test role modification and permission updates
+Test role deletion and dependency handling
+Test permission inheritance and validation
+Test custom permission combinations
+
+Access Control Enforcement
+Test feature visibility based on user permissions
+Test operation restrictions for different roles
+Test API endpoint access control
+Test UI element hiding/disabling based on permissions
+Test cross-feature permission validation
+
+11. Error Handling & Edge Cases
+Network & API Error Handling
+Test behavior during network connectivity issues
+Test API timeout handling and user feedback
+Test invalid server responses and error recovery
+Test concurrent operation conflicts
+Test resource exhaustion scenarios
+
+Form Validation & User Input
+Test all form validation rules and error messages
+Test special character handling in names and inputs
+Test maximum length limits and boundaries
+Test required field validation
+Test data type validation (numbers, emails, etc.)
+
+12. Performance & Load Tests
+UI Responsiveness
+Test large dataset rendering (many VMs, servers)
+Test search and filtering performance
+Test pagination and lazy loading
+Test real-time update performance with high frequency
+Test concurrent user operations
+Data Loading & Caching
+Test initial page load times
+Test data refresh and caching strategies
+Test background data synchronization
+Test browser memory usage with long sessions
+
+13.  Cross-browser & Mobile Responsiveness
+Browser Compatibility
+Test core functionality across different browsers
+Test WebSocket compatibility
+Test file upload/download across browsers
+Test responsive design on mobile devices
+Test touch interactions and mobile navigation
+
+

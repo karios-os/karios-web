@@ -1,0 +1,10 @@
+{
+  "name": "@karios-monorepo/shared-state",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0"
+  }
+}

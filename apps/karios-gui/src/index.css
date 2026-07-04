@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0b0a0a;
+  color-scheme: light dark;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*custom color */
+  --karios-blue: #3ca6f2;
+  --karios-green: #3ca6f2;
+  --karios-hover: #00ddd2;
+}
+/* Custom utility classes for background colors */
+.bg-karios-blue {
+  background-color: var(--karios-blue);
+}
+
+.bg-karios-green {
+  background-color: var(--karios-green);
+}
+
+/* Custom utility classes for text colors */
+.text-karios-blue {
+  color: var(--karios-blue);
+}
+
+.text-karios-green {
+  color: var(--karios-green);
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Cross-browser form element styling */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--karios-blue);
+  box-shadow: 0 0 0 2px rgba(60, 166, 242, 0.2);
+}
+
+select:hover {
+  border-color: #9ca3af;
+}
+
+/* Ensure dropdown options are visible */
+select option {
+  background-color: white;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+}

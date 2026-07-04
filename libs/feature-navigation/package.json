@@ -1,0 +1,12 @@
+{
+  "name": "@karios-monorepo/feature-navigation",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "dependencies": {
+    "iconsax-react": "^0.0.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0"
+  }
+}

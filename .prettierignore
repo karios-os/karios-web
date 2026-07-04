@@ -1,0 +1,38 @@
+# Dependencies
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist
+build
+.next
+out
+coverage
+.nx
+
+# Playwright
+playwright-report
+test-results
+
+# Generated files
+*.min.js
+*.min.css
+.cache
+
+# Configuration files that shouldn't be formatted
+*.lock
+*.log
+
+# IDE
+.vscode
+.idea
+
+# SBOM reports
+sbom-report.json
+sbom-text-report.txt
+
+# Other
+public/
+.git

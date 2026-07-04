@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "types": ["node", "jest", "@testing-library/jest-dom"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*",
+    "../shared-state/src/widgets/Button.tsx",
+    "../shared-state/src/widgets/Card.tsx",
+    "../shared-state/src/widgets/DataTable.tsx",
+    "../shared-state/src/widgets/ExpandableTable.tsx",
+    "../shared-state/src/widgets/Modal.tsx"
+  ],
+  "exclude": []
+}

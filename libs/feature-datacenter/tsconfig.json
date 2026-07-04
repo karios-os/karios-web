@@ -1,0 +1,70 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "es2017"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "target": "es2015",
+    "downlevelIteration": true,
+    "baseUrl": "../../",
+    "paths": {
+      "@karios-monorepo/shared-state": ["libs/shared-state/src/index.ts"],
+      "@karios-monorepo/feature-admin": ["libs/feature-admin/src/index.ts"],
+      "@karios-monorepo/feature-auth": ["libs/feature-auth/src/index.ts"],
+      "@karios-monorepo/feature-vm": ["libs/feature-vm/src/index.ts"],
+      "@karios-monorepo/feature-server": ["libs/feature-server/src/index.ts"],
+      "@karios-monorepo/feature-datacenter": ["libs/feature-datacenter/src/index.ts"],
+      "@karios-monorepo/feature-navigation": ["libs/feature-navigation/src/index.ts"],
+      "@karios-monorepo/shared-ui": ["libs/shared-ui/src/index.ts"]
+    },
+    "types": ["node"]
+  },
+  // "include": [
+  //   "src/**/*",
+  //   "../../libs/shared-state/**/*"
+  // ],
+  // "exclude": [
+  //   "node_modules",
+  // ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "../shared-state/**/*"]
+}
+
+// {
+//   "extends": "../../tsconfig.base.json",
+//   "compilerOptions": {
+//     "jsx": "react-jsx",
+//     "allowJs": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "strict": false,
+//     "noImplicitAny": false,
+//     "noImplicitOverride": true,
+//     "noPropertyAccessFromIndexSignature": true,
+//     "noImplicitReturns": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "target": "ES2016",
+//     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+//     "downlevelIteration": true
+//   },
+//   "files": [],
+//   "include": [
+//     "src/**/*"
+//   ],
+//   "exclude": [
+//     "node_modules",
+//     "../shared-state/**/*"
+//   ]
+// }

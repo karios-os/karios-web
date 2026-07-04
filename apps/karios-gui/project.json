@@ -1,0 +1,47 @@
+{
+  "name": "karios-gui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/karios-gui/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/karios-gui",
+        "tsConfig": "apps/karios-gui/tsconfig.app.json",
+        "main": "apps/karios-gui/index.html"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "karios-gui:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "karios-gui:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "karios-gui:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

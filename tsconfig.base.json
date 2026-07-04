@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "strict": false,
+    "baseUrl": ".",
+    "types": ["vite/client", "node", "jest", "@testing-library/jest-dom"],
+    "paths": {
+      "@karios-monorepo/shared-state": ["libs/shared-state/src/index.ts"],
+      "@karios-monorepo/feature-admin": ["libs/feature-admin/src/index.ts"],
+      "@karios-monorepo/feature-auth": ["libs/feature-auth/src/index.ts"],
+      "@karios-monorepo/feature-vm": ["libs/feature-vm/src/index.ts"],
+      "@karios-monorepo/feature-server": ["libs/feature-server/src/index.ts"],
+      "@karios-monorepo/feature-datacenter": ["libs/feature-datacenter/src/index.ts"],
+      "@karios-monorepo/feature-navigation": ["libs/feature-navigation/src/index.ts"],
+      "@karios-monorepo/shared-ui": ["libs/shared-ui/src/index.ts"]
+    },
+    "jsx": "react-jsx"
+  },
+  "exclude": ["node_modules", "tmp"]
+}

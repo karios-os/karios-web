@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #00ddd2;
+      }
+
+      .st1 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st2 {
+        fill: #221d57;
+      }
+
+      .st3 {
+        fill: #886cff;
+      }
+
+      .st4 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="192.6" y1="-2877.7" x2="262.1" y2="-2947.8" gradientTransform="translate(0 -2739.8) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00ddd2"/>
+      <stop offset="1" stop-color="#18313a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="290.7" y1="-3109" x2="252.3" y2="-3069.9" gradientTransform="translate(0 -2739.8) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#886cff"/>
+      <stop offset="1" stop-color="#2d2652"/>
+    </linearGradient>
+  </defs>
+  <polygon class="st4" points="117.8 201 180.5 263.7 211.6 263.7 215.1 260.2 144.7 189.8 144.7 87.1 253 87.1 253 60.2 117.8 60.2 117.8 201"/>
+  <polygon class="st1" points="388.1 319.4 309.8 241.1 290.8 260.2 361.2 330.6 361.2 433.3 239.2 433.3 233.7 460.2 388.1 460.2 388.1 319.4"/>
+  <rect class="st2" x="240.8" y="248.7" width="24.2" height="24.2" transform="translate(-110.3 255.2) rotate(-45)"/>
+  <path class="st3" d="M144.7,433.3v-102.7l108.2-108.2,27.1,27.1,19.1-19.1-46.2-46.2-135.2,135.2v140.8h157.4s1.7-13.5,3.4-26.9h-133.8,0Z"/>
+  <path class="st0" d="M215.5,87.1h145.7v102.7l-108.2,108.2-27.1-27.1-19.1,19.1,46.2,46.2,135.2-135.2V60.2h-168.6c-1.4,8.5-2.7,17.7-4.1,26.9h0Z"/>
+</svg>

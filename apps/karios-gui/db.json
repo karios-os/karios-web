@@ -1,0 +1,94 @@
+{
+  "vms": [
+    {
+      "name": "VM1",
+      "cpu": "4 cores",
+      "memory": "8 GB",
+      "state": "Running",
+      "datastore": "Datastore1",
+      "virtual-disk": [
+        {
+          "bytes-size": "50 GB",
+          "bytes-used": "20 GB"
+        }
+      ]
+    },
+    {
+      "name": "VM2",
+      "cpu": "2 cores",
+      "memory": "4 GB",
+      "state": "Stopped",
+      "datastore": "Datastore2",
+      "virtual-disk": [
+        {
+          "bytes-size": "30 GB",
+          "bytes-used": "10 GB"
+        }
+      ]
+    }
+  ],
+  "api": {
+    "v1": {
+      "compute": {
+        "vms": {
+          "list": [
+            {
+              "name": "VM1",
+              "cpu": "4 cores",
+              "memory": "8 GB",
+              "state": "Running",
+              "datastore": "Datastore1",
+              "virtual-disk": [
+                {
+                  "bytes-size": "50 GB",
+                  "bytes-used": "20 GB"
+                }
+              ]
+            },
+            {
+              "name": "VM2",
+              "cpu": "2 cores",
+              "memory": "4 GB",
+              "state": "Stopped",
+              "datastore": "Datastore2",
+              "virtual-disk": [
+                {
+                  "bytes-size": "30 GB",
+                  "bytes-used": "10 GB"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "api/v1/compute/vms/list": [
+    {
+      "name": "VM1",
+      "cpu": "4 cores",
+      "memory": "8 GB",
+      "state": "Running",
+      "datastore": "Datastore1",
+      "virtual-disk": [
+        {
+          "bytes-size": "50 GB",
+          "bytes-used": "20 GB"
+        }
+      ]
+    },
+    {
+      "name": "VM2",
+      "cpu": "2 cores",
+      "memory": "4 GB",
+      "state": "Stopped",
+      "datastore": "Datastore2",
+      "virtual-disk": [
+        {
+          "bytes-size": "30 GB",
+          "bytes-used": "10 GB"
+        }
+      ]
+    }
+  ]
+}

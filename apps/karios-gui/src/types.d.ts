@@ -1,0 +1,9 @@
+declare module '@karios-monorepo/shared-state';
+declare module '@karios-monorepo/feature-admin';
+declare module '@karios-monorepo/feature-auth';
+declare module '@karios-monorepo/feature-vm';
+declare module '@karios-monorepo/feature-server';
+declare module '@karios-monorepo/feature-datacenter';
+declare module '@karios-monorepo/feature-navigation';
+declare module '@karios-monorepo/shared-ui';
+declare module '@karios-monorepo/feature-vnc';

@@ -1,0 +1,84 @@
+{
+  "login": {
+    "message": "Login successful",
+    "access_token": "fake_access_token",
+    "user": {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "permissions": ["VM_MANAGE", "USER_MANAGE"]
+    }
+  },
+  "register": { "message": "User registered successfully" },
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "first_name": "Admin",
+      "last_name": "User",
+      "is_active": true,
+      "roles": [{ "id": 1, "name": "Administrator" }]
+    },
+    {
+      "id": 2,
+      "username": "testuser",
+      "email": "test@example.com",
+      "first_name": "Test",
+      "last_name": "User",
+      "is_active": true,
+      "roles": [{ "id": 2, "name": "User" }]
+    }
+  ],
+  "vms": [
+    {
+      "id": "vm-1",
+      "name": "Test-VM-01",
+      "state": "Running",
+      "datastore": "/pool1/vm",
+      "isOn": true
+    },
+    {
+      "id": "vm-2",
+      "name": "Dev-VM-02",
+      "state": "Stopped",
+      "datastore": "/pool1/vm",
+      "isOn": false
+    }
+  ],
+  "drivers": { "drivers": ["virtio-net", "e1000"] },
+  "switches": [{ "name": "switch0" }, { "name": "switch1" }],
+  "pools": [
+    { "name": "pool1", "NAME": "pool1", "free": "100", "FREE": "100G" },
+    { "name": "pool2", "NAME": "pool2", "free": "200", "FREE": "200G" }
+  ],
+  "nodeinfo": { "cpus": 8, "sockets": 2, "memory": 16384 },
+  "provision": {
+    "message": "VM provisioned successfully",
+    "vm_id": "mock-vm-123",
+    "name": "Mock-VM"
+  },
+  "scan": { "status": "scan initiated" },
+  "inventory": [
+    {
+      "ip": "192.168.1.10",
+      "vendor": "Dell",
+      "version": "iDRAC9",
+      "stage": "Discovered",
+      "username": "",
+      "password": "",
+      "provisioned": false
+    },
+    {
+      "ip": "192.168.1.11",
+      "vendor": "HP",
+      "version": "iLO5",
+      "stage": "Creds Set",
+      "username": "root",
+      "password": "pass",
+      "provisioned": true
+    }
+  ],
+  "setbmccreds": { "message": "BMC credentials set successfully" },
+  "ok_response": { "status": "ok" }
+}
